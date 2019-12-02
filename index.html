@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exposiciones</title>
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style type="text/css">
+        :root{
+            --azul: darkcyan;
+            --amarillo: darkgoldenrod;
+            --rojo: crimson;
+            --gris: dimgray;
+            
+        }
+        +{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Bebas Neue', cursive; 
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(4, 250px);
+        }
+        .expo{
+            font-weight: 2em;
+            overflow: hidden;
+        }
+        .expo img{
+            object-fit: cover;
+            object-position: center center;
+            height: 100%;
+            width: 100%;
+        }
+        .ex1{
+            background-color: var(--azul);
+            color: black;
+        }
+        .ex4{
+            background-color: var(--rojo);
+            color: white;
+        }
+        .ex5{
+            background-color: var(--amarillo);
+            color: black;
+        }
+        .ex8{
+            background-color: var(--gris);
+            color: white;
+        }
+        .ex1, .ex4, .ex5, .ex8{
+            grid-column: span 2;
+            padding: 2em 4em;
+            display: flex;
+            flex-direction: column;
+        }
+        .ex2, .ex3, .ex6, .ex7{
+            grid-column: span 3;
+        }
+        h1{
+            font-size: 2.5em;
+            line-height: 0.8em;
+            flex-grow: 1;
+        }
+        h2{
+            font-size: 1.5em;
+        }
+        /* Añadir @media */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="expo ex1">
+            <h1>Goya. Dibujos. "Solo la voluntad me sobra"</h1>
+            <h2>Museo del prado. 20/11/2019 - 16/02/2020</h2>
+        </div>
+        <div class="expo ex2">
+            <img src="img/goya.jpg">
+        </div>
+        <div class="expo ex3">
+            <img src="img/bombasgens.jpg">
+        </div>
+        <div class="expo ex4">
+            <h1>La mirada de las cosas</h1>
+            <h2>Bombas Gens. 22/02/2019 - 02/02/2020</h2>
+        </div>
+        <div class="expo ex5">
+            <h1>Romper el silencio por Edu Comelles</h1>
+            <h2>Ivam Cada Alcoi. 15/11/2019 - 22/03/2020</h2>
+        </div>
+        <div class="expo ex6">
+            <img src="img/rompersilencio.jpg">
+        </div>
+        <div class="expo ex7">
+            <img src="img/secretgarden.jpg">
+        </div>
+        <div class="expo ex8">
+            <h1>My Secret Garden Valencia</h1>
+            <h2>Ciudad de las Artes y las Ciencias. 7/02/2019 - 29/02/2020</h2>
+        </div>
+    </div>
+</body>
+</html>
